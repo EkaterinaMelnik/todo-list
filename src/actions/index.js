@@ -1,4 +1,4 @@
-let nextTodoId = 2;
+let nextTodoId = 3;
 
 export const ADD_TODO = 'ADD_TODO';
 
@@ -12,18 +12,18 @@ export const VisibilityFilters = {
     SHOW_ACTIVE: 'SHOW_ACTIVE'
 };
 
-export const add_todo = text => ({
+export const addTodo = text => ({
     type: ADD_TODO,
     id: nextTodoId++,
     text
 });
 
-export const toggle_todo = id => ({
+export const toggleTodo = id => ({
     type: TOGGLE_TODO,
     id
 });
 
-export const set_visibility_filter = filter => ({
+export const setVisibilityFilter = filter => ({
     type: SET_VISIBILITY_FILTER,
     filter
 });
