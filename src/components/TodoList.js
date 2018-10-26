@@ -9,8 +9,7 @@ const TodoList = ({todos, toggleTodo}) => (
                 <Todo key={todo.id}
                       onClick={() => toggleTodo(todo.id)}
                       {...todo}
-                />
-            )
+                />)
         }
     </ul>
 );
